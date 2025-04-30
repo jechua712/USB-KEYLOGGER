@@ -45,14 +45,14 @@ Para la prueba final utilicé dos máquinas virtuales:
 - Una con **Windows 10** (víctima), donde inserté la USB.
 - Otra con **Parrot OS** (atacante), escuchando con Netcat en el puerto 447.
 
-Desde el Administrador de tareas de Windows pude confirmar que el proceso `keyloggerofuscado.exe` se ejecutaba en segundo plano **incluso con Windows Defender activado**.
+Desde el Administrador de tareas de Windows pude confirmar que el proceso `keyloggerofuscado.exe` se ejecuta en segundo plano **incluso con Windows Defender activado**.
 
 ![Evidencia del proceso en segundo plano](images/1.jpg)
 
 
 
-El ejecutable comenzaba a registrar las pulsaciones del teclado apenas se ejecutaba. Al presionar la tecla ESC, se enviaba automáticamente el archivo con las capturas al equipo atacante.
-
+El ejecutable comienza a registrar las pulsaciones del teclado apenas se ejecutaba. Al presionar la tecla ESC, se enviaba automáticamente el archivo con las capturas al equipo atacante.
+![CAPTURA CON NETCAT](images/2.jpg)
 ## ¿Esto funcionaría en un entorno real?
 
 Sí, **bajo ciertas condiciones**:
