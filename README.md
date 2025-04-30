@@ -1,6 +1,8 @@
 # USB Keylogger PoC – Basado en Autorun y Python
 
-Este proyecto nace como una prueba de concepto (**PoC**) inspirada en un video de Mario Álvarez Fernández, mejor conocido como **"El Pingüino de Mario"**, donde enseña cómo construir un keylogger en Python.
+Cuando el USB empezó a hacerse popular —por ser liviano, práctico y súper útil para guardar información— también empezaron a circular historias de “USBs con virus”. Y no era paranoia: estos dispositivos podían contener malware que se ejecutaba apenas los conectabas a una computadora.
+
+Esto era posible gracias a una función de Windows llamada **autorun.inf**, que permitía que ciertos archivos se ejecutaran automáticamente al insertar el dispositivo. Los atacantes aprovechaban esta funcionalidad para propagar malware de manera sencilla y silenciosa.
 
 ## ⚙¿Qué hace este PoC?
 
