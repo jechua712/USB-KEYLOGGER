@@ -4,7 +4,7 @@ Cuando el USB empezó a hacerse popular —por ser liviano, práctico y súper �
 
 Esto era posible gracias a una función de Windows llamada **autorun.inf**, que permitía que ciertos archivos se ejecutaran automáticamente al insertar el dispositivo. Los atacantes aprovechaban esta funcionalidad para propagar malware de manera sencilla y silenciosa.
 
-## ⚙¿Qué hace este PoC?
+## ¿Qué hace este PoC?
 
 Básicamente, se trata de un keylogger que:
 - Captura las pulsaciones del teclado.
@@ -46,6 +46,8 @@ Para la prueba final utilicé dos máquinas virtuales:
 - Otra con **Parrot OS** (atacante), escuchando con Netcat en el puerto 447.
 
 Desde el Administrador de tareas de Windows pude confirmar que el proceso `keyloggerofuscado.exe` se ejecutaba en segundo plano **incluso con Windows Defender activado**.
+(ruta/1.jpg)
+
 
 El ejecutable comenzaba a registrar las pulsaciones del teclado apenas se ejecutaba. Al presionar la tecla ESC, se enviaba automáticamente el archivo con las capturas al equipo atacante.
 
