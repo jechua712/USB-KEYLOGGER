@@ -31,6 +31,7 @@ Usé **auto-py-to-exe** para convertir el script en un ejecutable `.exe`. Activ�
 - Al principio, el ejecutable fue detectado por **15 de 72** motores antivirus.
 - Luego, al **firmarlo con un certificado autofirmado** usando una herramienta de GitHub, lo volví a subir a VirusTotal y el resultado fue **3 de 71**. 
 > ¡Una gran diferencia!
+![virus total](images/3.jpg)
 
 ### Creación del autorun.inf
 Utilicé el programa **Autorun Creator** para generar un archivo `autorun.inf` con el siguiente contenido:
@@ -51,7 +52,7 @@ Desde el Administrador de tareas de Windows pude confirmar que el proceso `keylo
 
 
 
-El ejecutable comienza a registrar las pulsaciones del teclado apenas se ejecutaba. Al presionar la tecla ESC, se enviaba automáticamente el archivo con las capturas al equipo atacante.
+El ejecutable comienza a registrar las pulsaciones del teclado. Al presionar la tecla ESC, se envía automáticamente el archivo con las capturas a la máquina atacante atacante.
 ![CAPTURA CON NETCAT](images/2.jpg)
 ## ¿Esto funcionaría en un entorno real?
 
