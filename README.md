@@ -46,7 +46,9 @@ Para la prueba final utilicé dos máquinas virtuales:
 - Otra con **Parrot OS** (atacante), escuchando con Netcat en el puerto 447.
 
 Desde el Administrador de tareas de Windows pude confirmar que el proceso `keyloggerofuscado.exe` se ejecutaba en segundo plano **incluso con Windows Defender activado**.
-(images/1.jpg)
+
+![Evidencia del proceso en segundo plano](images/1.jpg)
+
 
 
 El ejecutable comenzaba a registrar las pulsaciones del teclado apenas se ejecutaba. Al presionar la tecla ESC, se enviaba automáticamente el archivo con las capturas al equipo atacante.
